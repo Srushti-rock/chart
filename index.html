@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie chart page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="js file/jquery-3.50.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Activity', 'Hours per Day'],
+          ['Music',     11],
+          ['Image',      2],
+          ['Archive',  2],
+          ['Document', 2],
+          ['Video',    7]
+        ]);
+
+        var options = {
+        //   title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <section class="fullbody">
+        <section class="head flexbox">
+            <section>
+                <h6>9:41</h6>
+            </section>
+            <section>
+                <img src="image/battery.png">
+                <img src="image/Wifi.png">
+                <img src="image/battery1.png">
+            </section>
+        </section>
+
+        <section class="local flexbox">
+            <h1>Storage Management</h1>    
+        </section>
+
+        <section class="pie">
+            
+            <div id="donutchart"></div>
+
+        </section>
+
+        <section class="word flexbox">
+            <p>LEAST USED</p>
+            <P>LARGEST</P>
+            <P>LATEST ACCESSED</P>
+        </section>
+        <hr>
+
+        <section>
+            <div class="block flexbox">
+                <img src="image/play124.png">
+                    <div class="data">
+                       <h4>TikTok dance</h4>
+                       <p>mov . 1 time</p> 
+                    </div>
+                <img class="center" src="image/Combined Shape.png">
+            </div>
+
+            <div class="block flexbox">
+                <img src="image/image.png">
+                    <div class="data">
+                       <h4>Selfie without beard</h4>
+                       <p>jpg .2 time</p> 
+                    </div>
+                <img class="center" src="image/Combined Shape.png">
+            </div>
+
+            <div class="block flexbox">
+                <img src="image/archive.png">
+                    <div class="data">
+                       <h4>University lecture</h4>
+                       <p>zip . 3.7gb</p> 
+                    </div>
+                <img class="center" src="image/Combined Shape.png">
+            </div>
+        </section>
+
+        <section class="footer flexbox">
+            
+                <button><img src="image/cloud1.png"></button>
+                <button><img src="image/bell.png"></button>
+                <button><img class="size" src="image/pluse.png"></button>
+                <button><img src="image/bell12.png"></button>
+                <button><img src="image/profileactive.png"></button>
+            
+        </section>
+
+    </section>
+</body>
+</html>

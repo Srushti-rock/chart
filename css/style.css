@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 15px;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+/*  */
+.fullbody{
+    text-align: center;
+}
+.fullbody .top{
+    margin-top: 1rem;
+}
+/*  */
+.head{
+    height: 4.5rem;
+    padding: 2rem;
+    background-image: url("../image/Path.png");
+}
+.head h6{
+    color: white;
+}
+.head img{
+    margin-left: 0.8rem;
+}
+/*  */
+.local{
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+.local h1{
+    color: #345095;
+}
+/*  */
+/*  */
+.pie{
+    width: 100%;
+    /* background-color: aqua;     */
+}
+/*  */
+.word{
+    padding: 1rem;
+}
+.word p{
+    font-size: 0.8rem;
+    color: gray;
+}
+/*  */
+.block{ 
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    /* background-color: hotpink; */
+}
+.block .data{
+    width: 80%;
+    text-align: left;
+    margin-top: 0.5rem;
+    margin-left: 1.3rem;
+    /* background-color: indianred; */
+}
+.block .data h4{
+    color: #242833;
+}
+.block .data p{
+    color: #7e8494;
+}
+.block .center{
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    height: 1.5rem;
+}
+.block .img123{
+    height: 4rem;
+    width: 4rem;
+}
+/*  */
+.footer{
+    width: 100%;
+    /* background-color:brown; */
+    padding:0.5rem;
+}
+.footer button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    justify-content: space-between;
+}
+.footer img{
+    width: 100%;
+    height: 100%;   
+}
+@media (max-width:500){
+    .fullbody{
+        width: 100%;
+    }
+}
